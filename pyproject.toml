@@ -3,12 +3,12 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "ofxstatement-sample"
-version = "0.0.1"
+name = "ofxstatement-fineco"
+version = "0.1.0"
 authors = [
-  { name="Andrey Lebedev", email="andrey@lebedev.lt" },
+  { name="Francesco Lorenzetti", email="" },
 ]
-description = "Sample plugin for ofxstatement"
+description = "italian bank Fineco, it parses both xls files available for private accounts"
 readme = "README.rst"
 requires-python = ">=3.9"
 classifiers = [
@@ -21,13 +21,14 @@ classifiers = [
     "Operating System :: OS Independent",
     "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
 ]
-keywords = ["ofx", "banking", "statement", "plugin", "ofxstatement"]
+keywords = ["ofx", "banking", "statement", "plugin", "ofxstatement", "fineco"]
 dependencies = [
   "ofxstatement",
+  "xlrd<=1.2.0"
 ]
 
 [project.urls]
-Homepage = "https://github.com/kedder/ofxstatement-sample/"
+Homepage = "https://github.com/frankIT/ofxstatement-fineco"
 
 [project.entry-points."ofxstatement"]
-sample = "ofxstatement_sample.plugin:SamplePlugin"
+sample = "ofxstatement_fineco.plugin:FinecoPlugin"
