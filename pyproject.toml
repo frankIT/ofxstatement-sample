@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "ofxstatement-fineco"
 version = "0.1.0"
 authors = [
-  { name="Francesco Lorenzetti", email="" },
+  { name="Francesco Lorenzetti" },
 ]
 description = "italian bank Fineco, it parses both xls files available for private accounts"
 readme = "README.rst"
